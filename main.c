@@ -3,12 +3,23 @@
 
 int main(void)
 {
+    int entre;
     int retire;
     int card;
     char name[32];
 
-    printf("Combien voulais vous retire ? : ");
-    scanf("%d", &retire);
+    printf("Metez 1 pour entré votre carte dans le distributeur : ");
+    scanf("%d", &entre)
+
+
+    if (entre == 1)
+    {
+        printf("Combien voulais vous retire ? : ");
+        scanf("%d", &retire);
+    } else {
+        printf("Carte non entré");
+        return 1;
+    }
 
     if (retire >= 20)
     {
